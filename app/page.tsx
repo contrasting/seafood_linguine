@@ -64,7 +64,7 @@ export default function Home() {
               Plates reviewed
             </Typography>
             <Typography
-              sx={{ fontFamily: 'Georgia, "Times New Roman", serif', fontSize: "2.75rem", lineHeight: 1 }}
+              sx={{ fontSize: "2.75rem", lineHeight: 1 }}
             >
               {entries.length.toString().padStart(2, "0")}
             </Typography>

@@ -97,7 +97,6 @@ export default function EntryIndex({ entries }: { entries: EntryPreview[] }) {
                 <Typography
                   component="span"
                   sx={{
-                    fontFamily: 'Georgia, "Times New Roman", serif',
                     fontSize: { sm: "2.4rem", md: "3rem" },
                     lineHeight: 1,
                   }}

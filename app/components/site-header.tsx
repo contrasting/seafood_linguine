@@ -27,7 +27,6 @@ export default function SiteHeader() {
             <Typography
               component="span"
               sx={{
-                fontFamily: 'Georgia, "Times New Roman", serif',
                 fontSize: { xs: "1.15rem", md: "1.35rem" },
                 letterSpacing: "-0.035em",
               }}

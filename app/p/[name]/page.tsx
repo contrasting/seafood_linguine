@@ -92,7 +92,6 @@ export default async function EntryPage(props: PageProps<"/p/[name]">) {
           >
             <Typography
               sx={{
-                fontFamily: 'Georgia, "Times New Roman", serif',
                 fontSize: { xs: "4.5rem", md: "6rem" },
                 lineHeight: 0.8,
               }}

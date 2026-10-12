@@ -27,24 +27,21 @@ const theme = createTheme({
     borderRadius: 2,
   },
   typography: {
-    fontFamily:
-      'Arial, Helvetica, "Helvetica Neue", system-ui, -apple-system, sans-serif',
+    fontFamily: "var(--font-geist-sans), Arial, sans-serif",
     h1: {
-      fontFamily: 'Georgia, "Times New Roman", serif',
       fontWeight: 400,
       letterSpacing: "-0.055em",
     },
     h2: {
-      fontFamily: 'Georgia, "Times New Roman", serif',
       fontWeight: 400,
       letterSpacing: "-0.045em",
     },
     h3: {
-      fontFamily: 'Georgia, "Times New Roman", serif',
       fontWeight: 400,
       letterSpacing: "-0.035em",
     },
     overline: {
+      fontFamily: "var(--font-geist-mono), monospace",
       fontSize: "0.7rem",
       fontWeight: 700,
       letterSpacing: "0.14em",
