@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
@@ -22,8 +23,16 @@ export default function SiteHeader() {
             href="/"
             color="text.primary"
             underline="none"
-            sx={{ display: "inline-flex", alignItems: "baseline", gap: 1 }}
+            sx={{ display: "inline-flex", alignItems: "center", gap: 1.25 }}
           >
+            <Image
+              src="/icon.svg"
+              alt=""
+              width={34}
+              height={34}
+              aria-hidden="true"
+              style={{ width: "auto" }}
+            />
             <Typography
               component="span"
               sx={{
@@ -33,22 +42,9 @@ export default function SiteHeader() {
             >
               Seafood Linguine
             </Typography>
-            <Box
-              component="span"
-              sx={{ width: 5, height: 5, borderRadius: "50%", bgcolor: "secondary.main" }}
-            />
           </Link>
 
           <Stack component="nav" direction="row" spacing={{ xs: 2.5, md: 4 }}>
-            <Link
-              component={NextLink}
-              href="/"
-              color="text.secondary"
-              underline="none"
-              variant="button"
-            >
-              Reviews
-            </Link>
             <Link
               component={NextLink}
               href="/about"
