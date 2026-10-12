@@ -70,9 +70,6 @@ export default async function EntryPage(props: PageProps<"/p/[name]">) {
           }}
         >
           <Box>
-            <Typography variant="overline" color="secondary.main">
-              Reviewed {dateFormatter.format(entry.date)}
-            </Typography>
             <Typography
               component="h1"
               variant="h1"
@@ -161,9 +158,6 @@ export default async function EntryPage(props: PageProps<"/p/[name]">) {
           </Stack>
 
           <Box>
-            <Typography variant="overline" color="text.secondary">
-              The verdict
-            </Typography>
             <Typography
               component="p"
               variant="h3"
