@@ -1,25 +1,27 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Providers from "@/app/components/providers";
+import SiteFooter from "@/app/components/site-footer";
+import SiteHeader from "@/app/components/site-header";
 
 export const metadata: Metadata = {
-  title: "Seafood Linguine",
-  description: "Rating all the seafood linguines I've ever eaten",
+  metadataBase: new URL("https://seafoodlinguine.com"),
+  title: {
+    default: "Seafood Linguine",
+    template: "%s — Seafood Linguine",
+  },
+  description: "An ongoing field guide to seafood linguine, one plate at a time.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+    <html lang="en">
+      <body>
+        <Providers>
+          <SiteHeader />
+          <main>{children}</main>
+          <SiteFooter />
+        </Providers>
+      </body>
     </html>
   );
 }
