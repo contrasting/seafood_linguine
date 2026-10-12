@@ -34,8 +34,6 @@ export default function EntryIndex({ entries }: { entries: EntryPreview[] }) {
             href={`/p/${entry.slug}`}
             sx={{
               py: { xs: 3, md: 4 },
-              px: { xs: 0, md: 2 },
-              mx: { md: -2 },
               borderRadius: 0,
               "& .entry-image": {
                 transform: "scale(1)",
